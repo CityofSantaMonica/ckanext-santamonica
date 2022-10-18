@@ -1212,9 +1212,9 @@ body.category {
   color: #90beca;
   text-align: center;
 }
-.category__icon svg {
-  height: 35px;
-  width: 35px;
+.category__icon img {
+  height: 36px;
+  width: 36px;
   filter: invert(99%) sepia(0%) saturate(7494%) hue-rotate(118deg)
     brightness(105%) contrast(100%);
 }

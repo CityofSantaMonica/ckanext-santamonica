@@ -11,7 +11,7 @@ h.get_site_statistics() %} {% block styles %} {{ super() }} {% asset
     >
       <div class="hero__inner">
         <div class="container">
-          <div class="row">
+          <div class="row-hero">
             <div class="title-box">
               <h1 class="heading-main text-center">City Of Santa Monica</h1>
               <h2 class="subheading text-center">
@@ -45,7 +45,7 @@ h.get_site_statistics() %} {% block styles %} {{ super() }} {% asset
             </form>
           </div>
 
-          <div class="row">
+          <div class="row-hero">
             <div class="stats">
               <a href="/dataset" class="stat__link">
                 <div class="stat__wrapper">
@@ -91,7 +91,7 @@ h.get_site_statistics() %} {% block styles %} {{ super() }} {% asset
     </div>
     <div class="wrapper wrapper--categories">
       <div class="container">
-        <div class="row">
+        <div class="row-hero">
           <div class="categories">
             {% for group in h.santamonica_dataset_groups() %}
             <div class="category__wrapper">
@@ -118,7 +118,7 @@ h.get_site_statistics() %} {% block styles %} {{ super() }} {% asset
       </div>
       <div class="wrapper wrapper--categories">
         <div class="container">
-          <div class="row" style="text-align: center; padding: 32px 0">
+          <div class="row-hero" style="text-align: center; padding: 32px 0">
             <a href="/dataset" class="btn btn-transparent btn-categories"
               >All datasets</a
             >
@@ -128,6 +128,5 @@ h.get_site_statistics() %} {% block styles %} {{ super() }} {% asset
     </div>
     <!-- end hero in categories -->
   </main>
-  <!-- .site-main -->
 </div>
 {% endblock %}

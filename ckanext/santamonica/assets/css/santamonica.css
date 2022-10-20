@@ -759,6 +759,16 @@ input[type="submit"] {
 .category--box:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0 1px 40px;
 }
+
+.category--box:hover .category__link-content {
+  color: white
+}
+
+.category--box:hover img {
+  filter: invert(99%) sepia(0%) saturate(7494%) hue-rotate(118deg)
+    brightness(105%) contrast(100%);
+}
+
 .category--box {
   border-radius: 3px;
   position: relative;
@@ -1164,9 +1174,7 @@ body.category {
 .stat__description {
   font-size: 13px;
 }
-.wrapper--categories {
-  background-color: #005eb8;
-}
+
 .categories {
   display: flex;
   flex-wrap: wrap;
@@ -1191,6 +1199,7 @@ body.category {
   background-color: #010d14;
 }
 .category__link {
+  color: black;
   display: flex;
   font-size: 14px;
   height: 100%;
@@ -1206,17 +1215,13 @@ body.category {
   margin: auto;
 }
 .category__icon {
-  color: #90beca;
   text-align: center;
 }
 .category__icon img {
   height: 36px;
   width: 36px;
-  filter: invert(99%) sepia(0%) saturate(7494%) hue-rotate(118deg)
-    brightness(105%) contrast(100%);
 }
 .category__name {
-  color: #fff;
   display: block;
   margin: 0 5px;
   text-transform: uppercase;
@@ -1228,7 +1233,6 @@ body.category {
   }
 }
 .category__count {
-  color: #90beca;
   font-weight: 400;
 }
 .datasets {

@@ -1,4 +1,0 @@
-main_css:
-  output: santamonica/santamonica.css
-  contents:
-    - css/santamonica.css

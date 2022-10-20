@@ -3,3 +3,8 @@ main_css:
   contents:
     - css/santamonica.css
     - css/__footer.css
+
+footer:
+  output: santamonica/footer.css
+  contents:
+    - css/__footer.css

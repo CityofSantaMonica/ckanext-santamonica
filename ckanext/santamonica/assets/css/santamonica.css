@@ -795,7 +795,6 @@ a {
   cursor: pointer;
   display: inline;
   hyphens: none;
-  word-break: break-all;
 }
 a:hover {
   color: #3497d5;
@@ -1177,10 +1176,15 @@ body.category {
 }
 
 .categories {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 50px;
+}
+@media screen and (min-width: 768px) {
+.categories {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
 }
 .category__wrapper {
   padding-bottom: 15px;

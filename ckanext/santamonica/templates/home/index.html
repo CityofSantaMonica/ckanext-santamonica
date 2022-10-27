@@ -1,6 +1,6 @@
 {% ckan_extends %} {% set intro = g.site_intro_text %} {% set stats =
 h.get_site_statistics() %} {% block styles %} {{ super() }} {% asset
-'santamonica/main_css' %} {% endblock %}{% block content %}
+'santamonica/landing_page' %} {% endblock %}{% block content %}
 <div id="primary">
   <main id="main" class="site-main site-main--home" role="main">
     <div
@@ -93,20 +93,20 @@ h.get_site_statistics() %} {% block styles %} {{ super() }} {% asset
       <div class="container">
         <div class="row-hero">
           <div class="categories">
-            {% for group in h.santamonica_dataset_groups() %}
+            {% for org in h.santamonica_dataset_orgs() %}
             <div class="category__wrapper">
               <div class="category--box">
                 <a
-				  href="group/{{group.name}}"
+				  href="organization/{{org.name}}"
                   class="category__link"
                 >
                   <div class="category__link-content">
 					<span class="category__icon">
-						<img src="{{ group.image_display_url }}"></img>  
+						<img src="{{ org.image_display_url }}"></img>  
                     </span>
-                    <span class="category__name">{{ group.title }} </span>
+                    <span class="category__name">{{ org.title }} </span>
                     <span class="category__count"
-                      >{{ group.package_count }}</span
+                      >{{ org.package_count }}</span
                     >
                   </div>
                 </a>

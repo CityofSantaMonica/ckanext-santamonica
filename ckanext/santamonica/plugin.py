@@ -23,5 +23,5 @@ class SantamonicaPlugin(plugins.SingletonPlugin):
         helper function.
         '''
         return {
-            'santamonica_dataset_groups': helpers.dataset_groups,
+            'santamonica_dataset_orgs': helpers.dataset_orgs,
         }

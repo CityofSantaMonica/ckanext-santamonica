@@ -1,4 +1,4 @@
-main_css:
+landing_page:
   output: santamonica/santamonica.css
   contents:
     - css/santamonica.css
@@ -8,3 +8,8 @@ footer:
   output: santamonica/footer.css
   contents:
     - css/__footer.css
+
+base:
+  output: santamonica/base.css
+  contents:
+    - css/base.css

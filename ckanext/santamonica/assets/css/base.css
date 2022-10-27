@@ -1,0 +1,8 @@
+a[href^="/dataset/groups/"],
+a[href$="group/"] {
+	display: none !important;
+}
+
+.filters > div > section:nth-child(2) {
+	display: none !important;
+}

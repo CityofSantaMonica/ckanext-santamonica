@@ -1,12 +1,14 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
+from ckan.lib.plugins import DefaultTranslation
 
 from ckanext.santamonica import helpers
 
 
-class SantamonicaPlugin(plugins.SingletonPlugin):
+class SantamonicaPlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
+    plugins.implements(plugins.ITranslation)
 
     # IConfigurer
 
